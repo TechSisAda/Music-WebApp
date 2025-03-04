@@ -8,7 +8,7 @@ const SongList = ({ songs, onPlay, onLike}) => {
                 <ul>
                     {songs.map((song) => (
                         <div key={song.id} className='song-card'>
-                            <img src="song.image" alt="song.name" className='song-image' />
+                            <img src={song.image} alt="song-image" className='song-image' />
                             <div className="song-info">
                                 <h3>{song.name}</h3>
                                 <p>{song.artist}</p>
